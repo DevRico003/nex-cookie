@@ -4,11 +4,9 @@ import Upgrades from "./upgrades"
 
 export default function Home() {
 
-  const [cookieCount, setCookieCount] = useState(0)
+  const [cookieCount, setCookieCount, autoClickerCount, setAutoClickerCount] = useState(0)
 
   const [clickPower, setClickPower] = useState(1)
-
-  const [autoClickerCount, setAutoClickerCount] = useState(0)
 
   // useEffect wird aufgerufen, wenn sich der Wert von autoClickerCount ändert.
   useEffect(() => {
